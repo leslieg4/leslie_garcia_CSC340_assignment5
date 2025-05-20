@@ -25,7 +25,7 @@ public:
     void printGraph() const;
 
     // Get neighbors of a vertex
-    const list<pair<int, T>>& getNeighbors(int vertex) const;
+    const vector<pair<int, T>>& getNeighbors(int vertex) const;
 
     // Depth First Traversal
     void DFT(int start) const;
@@ -40,7 +40,7 @@ public:
 private:
     int V; // Number of vertices
     bool directed; // Whether the graph is directed or undirected
-    vector<list<pair<int, T>>> adjList; // Adjacency list
+    vector<LinkedBag<pair<int, T>>> adjList; // Adjacency list
 };
 
 // Include the implementation of template functions
